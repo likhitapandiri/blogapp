@@ -17,7 +17,7 @@ const salt = bcrypt.genSaltSync(10);
 const secret = 'wiughhhhhhhhhhhhhhhha67q7qtys';
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({credentials:true,origin:'http://localhost:3000'}));
+// app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(morgan('tiny'));
 mongoose.connect('mongodb+srv://likhitapandiri112:k3dqQ3VRWVgUVvZP@cluster0.xa4ywaz.mongodb.net/?retryWrites=true&w=majority').then(() => {
     console.log("Database connected")
